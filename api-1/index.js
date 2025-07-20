@@ -9,7 +9,7 @@ app.get('/', async (req, res) => {
   try {
     const response = await axios.get('http://api-2:4000/');
     console.log('API1: Got response from API2:', response.data);
-    res.send(`Response from API2: ${response.data}`);
+    res.send(`This is an answer : ${response.data}`);
   } catch (error) {
     console.error('API1: Error contacting API2:', error.message);
     res.status(500).send('Error contacting API2');

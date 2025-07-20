@@ -4,7 +4,7 @@ const PORT = 4000;
 
 app.get('/', (req, res) => {
   console.log('API2: Received request from API1');
-  res.send('Hello from API2');
+  res.send('Hello World');
 });
 
 app.listen(PORT, () => {
