@@ -1,0 +1,13 @@
+version: '3'
+services:
+  api-1:
+    build: ./api-1
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api-2
+
+  api-2:
+    build: ./api-2
+    ports:
+      - "4000:4000"
